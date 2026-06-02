@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{51cf4370-c726-4f8e-9d50-af34b3d86c5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTank.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTank.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Infantry.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="APProjectile.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HEProjectile.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTank.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTank.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Infantry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="APProjectile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HEProjectile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

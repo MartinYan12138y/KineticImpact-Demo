@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b4f93928-c5fd-42da-84fa-916d6dcf5782}</ProjectGuid>
+    <RootNamespace>COMP710KineticImpact</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ThirdParty\SDL2\include;$(ProjectDir)..\ThirdParty\SDL2_image\include;$(ProjectDir)..\ThirdParty\SDL2_ttf\include;$(ProjectDir)..\ThirdParty\FMOD\include;$(ProjectDir)..\ThirdParty\glew\include;$(ProjectDir)..\ThirdParty\imgui;$(ProjectDir)..\ThirdParty\box2d\include;$(ProjectDir)..\ThirdParty\box2d\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\ThirdParty\SDL2\lib\x64;$(ProjectDir)..\ThirdParty\SDL2_image\lib\x64;$(ProjectDir)..\ThirdParty\SDL2_ttf\lib\x64;$(ProjectDir)..\ThirdParty\FMOD\lib\x64;$(ProjectDir)..\ThirdParty\glew\lib\x64;$(ProjectDir)..\ThirdParty\imgui;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;fmod_vc.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ThirdParty\SDL2\include;$(ProjectDir)..\ThirdParty\SDL2_image\include;$(ProjectDir)..\ThirdParty\SDL2_ttf\include;$(ProjectDir)..\ThirdParty\FMOD\include;$(ProjectDir)..\ThirdParty\glew\include;$(ProjectDir)..\ThirdParty\imgui;$(ProjectDir)..\ThirdParty\box2d\include;$(ProjectDir)..\ThirdParty\box2d\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\ThirdParty\SDL2\lib\x64;$(ProjectDir)..\ThirdParty\SDL2_image\lib\x64;$(ProjectDir)..\ThirdParty\SDL2_ttf\lib\x64;$(ProjectDir)..\ThirdParty\FMOD\lib\x64;$(ProjectDir)..\ThirdParty\glew\lib\x64;$(ProjectDir)..\ThirdParty\imgui;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;fmod_vc.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="APProjectile.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="EnemyTank.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="HEProjectile.h" />
+    <ClInclude Include="Infantry.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="PlayerTank.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Tank.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="Vec2.h" />
+    <ClInclude Include="Wreck.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="APProjectile.cpp" />
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="EnemyTank.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="HEProjectile.cpp" />
+    <ClCompile Include="Infantry.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ParticleEffect.cpp" />
+    <ClCompile Include="PlayerTank.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="Wreck.cpp" />
+    <ClCompile Include="..\ThirdParty\imgui\imgui.cpp" />
+    <ClCompile Include="..\ThirdParty\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\ThirdParty\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\ThirdParty\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\ThirdParty\imgui\imgui_impl_sdl2.cpp" />
+    <ClCompile Include="..\ThirdParty\imgui\imgui_impl_opengl3.cpp" />
+    <!-- Box2D source files (no prebuilt lib; compiled directly into project) -->
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_broad_phase.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_chain_shape.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_circle_shape.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_collide_circle.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_collide_edge.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_collide_polygon.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_collision.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_distance.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_dynamic_tree.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_edge_shape.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_polygon_shape.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\collision\b2_time_of_impact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\common\b2_block_allocator.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\common\b2_draw.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\common\b2_math.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\common\b2_settings.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\common\b2_stack_allocator.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\common\b2_timer.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_body.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_chain_circle_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_chain_polygon_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_circle_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_contact_manager.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_contact_solver.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_distance_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_edge_circle_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_edge_polygon_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_fixture.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_friction_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_gear_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_island.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_motor_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_mouse_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_polygon_circle_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_polygon_contact.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_prismatic_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_pulley_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_revolute_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_weld_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_wheel_joint.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_world.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\dynamics\b2_world_callbacks.cpp" />
+    <ClCompile Include="..\ThirdParty\box2d\src\rope\b2_rope.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
